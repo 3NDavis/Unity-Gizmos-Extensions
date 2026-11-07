@@ -1,0 +1,19 @@
+{
+  "name": "com.3ndavis.gizmosextensions",
+  "version": "1.0.0",
+  "displayName": "Gizmos Extensions",
+  "description": "A suite of extra gizmos",
+  "unity": "6000.0",
+  "documentationUrl": "N/A",
+  "licensesUrl": "N/A",
+  "license": "See LICENSE.txt file",
+  "keywords": [
+    "Gizmos"
+  ],
+  "author": {
+    "name": "3NDavis"
+  },
+  "dependencies": {
+    
+  }
+}
