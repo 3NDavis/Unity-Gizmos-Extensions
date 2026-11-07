@@ -6,7 +6,9 @@ A small unity package increasing the number of gizmos avalable for development
 
 ## Instalation
 
-In the `Unity Package Manager` Go to `Install package from git url...` and use this url `https://github.com/3NDavis/SharedValues.git?path=./`
+In the `Unity Package Manager` Go to `Install package from git url...`
+
+Use the url: `https://github.com/3NDavis/SharedValues.git?path=./`
 
 ## Contents
 Editor Gizmos:
