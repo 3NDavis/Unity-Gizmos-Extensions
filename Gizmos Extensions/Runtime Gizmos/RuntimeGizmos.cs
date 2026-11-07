@@ -45,6 +45,11 @@ namespace GizmosExtensions.RuntimeGizmos
             SetupEmpties();
         }
 
+        private void Update()
+        {
+            ClearGizmos();
+        }
+
         private void SetupEmpties()
         {
             emptyHolder = new GameObject("Runtime Gizmos");
@@ -185,7 +190,7 @@ namespace GizmosExtensions.RuntimeGizmos
            return SpawnGizmo(prefab, poolType, Vector3.zero, points); 
         }
 
-        public static void ClearGizmos()
+        private static void ClearGizmos()
         {
 #if USE_RUNTIME_GIZMOS
             for (int i = 0; i < pooledObjects.Count; i++)

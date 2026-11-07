@@ -25,9 +25,8 @@ namespace GizmosExtensions.RuntimeGizmos.Tests
         [SerializeField] private int number;
 
 
-        void Update()
+        void LateUpdate()
         {
-            RuntimeGizmos.ClearGizmos();
             foreach(var shape in shapes)
             {
                 RuntimeGizmos.DrawShape(shape.points);
@@ -56,10 +55,9 @@ namespace GizmosExtensions.RuntimeGizmos.Tests
             if(Application.isPlaying)
                 return;
 
-            Debug.DrawLine(Color.red, Debug.GetHexagonPoints(transform.position, transform.rotation, 4));
-            Debug.DrawLine(Color.blue, Debug.GetPentagonPoints(transform.position, transform.rotation, 2));
-            Debug.DrawLine(Color.magenta, Debug.GetArcPoints(transform.position, transform.rotation, 1, 30, 120));
-
+            Debug.DrawHexagon(transform.position, transform.rotation, 4, Color.red);
+            Debug.DrawPentagon(transform.position, transform.rotation, 2, Color.blue);
+            Debug.DrawArc(transform.position, transform.rotation, 1, 120, 32, Color.magenta);
             Debug.DrawNumber(transform.position + (Vector3.up * 3), number, Color.green);
 
         }
