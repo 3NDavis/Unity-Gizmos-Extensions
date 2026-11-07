@@ -29,16 +29,16 @@ namespace GizmosExtensions.RuntimeGizmos.Tests
         {
             foreach(var shape in shapes)
             {
-                RuntimeGizmos.DrawShape(shape.points);
+                RuntimeGizmosManager.DrawShape(shape.points);
             }
 
             for (int i = 0; i < lines.Length; i++)
             {
-                RuntimeGizmos.DrawLine(new GizmoLine(lines[i].drawProgress, lines[i].color, lines[i].points));
+                RuntimeGizmosManager.DrawLine(new GizmoLine(lines[i].drawProgress, lines[i].color, lines[i].points));
             }
-            RuntimeGizmos.DrawLine(new GizmoLine(Debug.GetHexagonPoints(transform.position, transform.rotation, 4)));
-            RuntimeGizmos.DrawLine(new GizmoLine(Debug.GetPentagonPoints(transform.position, transform.rotation, 2)));
-            RuntimeGizmos.DrawLine(new GizmoLine(Debug.GetArcPoints(transform.position, transform.rotation, 1, 30, 120)));
+            RuntimeGizmosManager.DrawLine(new GizmoLine(Debug.GetHexagonPoints(transform.position, transform.rotation, 4)));
+            RuntimeGizmosManager.DrawLine(new GizmoLine(Debug.GetPentagonPoints(transform.position, transform.rotation, 2)));
+            RuntimeGizmosManager.DrawLine(new GizmoLine(Debug.GetArcPoints(transform.position, transform.rotation, 1, 30, 120)));
         }
 
         void OnDrawGizmos()

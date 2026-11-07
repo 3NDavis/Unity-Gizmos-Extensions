@@ -4,7 +4,7 @@ using UnityEngine.Pool;
 
 namespace GizmosExtensions.RuntimeGizmos
 {
-    public class RuntimeGizmos : MonoBehaviour
+    public class RuntimeGizmosManager : MonoBehaviour
     {
 #region  Variables
         private GameObject emptyHolder;
