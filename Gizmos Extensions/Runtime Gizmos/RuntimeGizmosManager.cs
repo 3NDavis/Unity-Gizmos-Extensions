@@ -129,6 +129,7 @@ namespace GizmosExtensions.RuntimeGizmos
 
         public static LineRenderer DrawLine(GizmoLine gizmoLine)
         {
+#if USE_RUNTIME_GIZMOS
             var line = SpawnGizmo(s_LinePrefab, PoolType.Lines, gizmoLine.points);
 
             // Create a new MaterialPropertyBlock
@@ -143,12 +144,21 @@ namespace GizmosExtensions.RuntimeGizmos
             line.SetPropertyBlock(propertyBlock);
 
             return line;
+#elif UNITY_EDITOR || DEVELOPMENT_BUILD
+            Debug.Log($"A runtime gizmos was attempted to be drawn, add USE_RUNTIME_GIZMOS to the player setting's scripting defines to start using them");
+            return null;
+#endif
         }
 
 
         public static LineRenderer DrawShape(params Vector3[] points)
         {
+#if USE_RUNTIME_GIZMOS
             return SpawnGizmo(s_ShapePrefab, PoolType.Shapes, points);
+#elif UNITY_EDITOR || DEVELOPMENT_BUILD
+            Debug.Log($"A runtime gizmos was attempted to be drawn, add USE_RUNTIME_GIZMOS to the player setting's scripting defines to start using them");
+            return null;
+#endif
         }
         private static LineRenderer SpawnGizmo(LineRenderer prefab, PoolType poolType, Vector3 center, params Vector3[] points)
         {
