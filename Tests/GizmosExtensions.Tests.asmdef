@@ -1,0 +1,17 @@
+{
+    "name": "GizmosExtensions.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:84fefc61d3f6ea9568ad71322d9f63c9",
+        "GUID:4f1321c8a90a8111291194282f1b4ed3"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

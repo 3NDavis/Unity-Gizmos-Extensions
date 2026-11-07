@@ -1,0 +1,16 @@
+{
+    "name": "GizmosExtensions.RuntimeGizmos",
+    "rootNamespace": "GizmosExtensions.RuntimeGizmos",
+    "references": [
+        "GUID:84fefc61d3f6ea9568ad71322d9f63c9"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
