@@ -8,7 +8,7 @@ A small unity package increasing the number of gizmos avalable for development
 ## Instalation
 In the package manager go to install package from git URL... and paste the following:
 
-`https://github.com/3NDavis/SharedValues.git?path=./`
+`https://github.com/3NDavis/Unity-Gizmos-Extensions.git?path=./`
 
 ## Contents
 Editor Gizmos:
