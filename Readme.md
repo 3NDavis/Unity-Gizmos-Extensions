@@ -3,6 +3,7 @@
 A small unity package increasing the number of gizmos avalable for development
 
 ![alt text](image.png)
+![alt text](RuntimeShape.gif)
 
 ## Instalation
 
@@ -59,6 +60,8 @@ Runtime gizmos requires the `RuntimeGizmos` script to be present and configured 
 The runtime gizmos themselves are LineRenderers
 
 The runtime manager will clear the gizmos *every frame* in `Update()` to prevent parity bugs it is reccomended that you use `LateUpdate()` for any RuntimeGizmos
+
+![alt text](RuntimeLine.gif)
 
 #### Setup
 
