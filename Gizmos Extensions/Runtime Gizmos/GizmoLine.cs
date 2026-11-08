@@ -13,16 +13,12 @@ namespace GizmosExtensions.RuntimeGizmos
         {
             progress = 1;
             this.points = points;
-            drawnColor = Color.green;
-            futureColor = Color.blue;
         }
 
         public GizmoLine(float progress, params Vector3[] points)
         {
             this.progress = Mathf.Clamp01(progress);
             this.points = points;
-            drawnColor = Color.green;
-            futureColor = Color.blue;
         }
 
         public GizmoLine(Color color, params Vector3[] points)
@@ -30,7 +26,6 @@ namespace GizmosExtensions.RuntimeGizmos
             this.progress = 1;
             this.points = points;
             drawnColor = color;
-            futureColor = Color.blue;
         }
 
         public GizmoLine(Color color, Color futureColor, params Vector3[] points)
@@ -46,7 +41,6 @@ namespace GizmosExtensions.RuntimeGizmos
             this.progress = Mathf.Clamp01(progress);
             this.points = points;
             drawnColor = color;
-            futureColor = Color.blue;
         }
 
         public GizmoLine(float progress, Color color, Color futureColor, params Vector3[] points)
